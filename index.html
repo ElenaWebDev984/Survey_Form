@@ -1,0 +1,63 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>My form</title>
+    </head>
+    <body>
+        <h1 id="title">My form</title>
+        <p id="description">Thank you for visiting our forum! Please help us get to know our users better.</p>
+        <form id="survey-form">
+                <fieldset class="about">
+                    <label id="name-label">Name</label>
+                    <input id="name" type="text" placeholder="Your name*" required>
+                    <label id="email-label">Email</label>
+                    <input id="email" type="email" placeholder="Your email*" required>
+                    <label id="number-label">Age</label>
+                    <input id="number" type="number" min="18" max="99" placeholder="Your age*">
+                </fieldset>
+                <fieldset class="role">
+                    <legend>Current role (required)</legend>
+                    <select id="dropdown" name="current">Your current role
+                            <option selected disabled>Your current role</option>
+                            <option value="student">Student</option>
+                            <option value="job">Job</option>
+                            <option value="other">Other</option>
+                    </select>
+                </fieldset>
+                <fieldset class="opinion">
+                    <legend>Do you like this forum?</legend>
+                    <div class="wrap">
+                        <label for="yes">
+                                <input type="radio" value="yes" id="yes" name="your opinion">
+                                Yes
+                        </label>
+                        <label for="maybe">
+                                <input type="radio" value="yes" id="maybe" name="your opinion">
+                                Maybe
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>What do you like about our forum?</legend>
+                    <div class="wrap">
+                        <label for="communication">
+                            <input type="checkbox" value="communication" id="communication" name="preferences">
+                            Communication
+                    </label>
+                    <label for="pictures">
+                            <input type="checkbox" value="pictures" id="pictures" name="preferences">
+                            Pictures
+                    </label>
+                    <label for="tests">
+                            <input type="checkbox" value="tests" id="tests" name="preferences">
+                            Tests
+                    </label>
+                    </div>
+                </fieldset>
+                <textarea rows="5" cols="30" placeholder="Something about you*">Something about you...</textarea>
+                <button type="submit" id="submit">Send</button>
+        </form> 
+    </body>
